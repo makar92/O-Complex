@@ -1,0 +1,43 @@
+.app {
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  padding: 55px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #222222;
+
+  @media (max-width: 1024px) {
+    padding: 20px 20px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 14px 14px;
+  }
+}
+
+.header {
+  margin: 0px 0px 105px 0px;
+
+  @media (max-width: 767px) {
+    margin: 0px 0px 97px 0px;
+  }
+}
+
+.feedbacks {
+  margin: 0px 0px 243px 0px;
+
+  @media (max-width: 1024px) {
+    margin: 0px 0px 188px 0px;
+  }
+  @media (max-width: 767px) {
+    margin: 0px 0px 164px 0px;
+  }
+}
+
+.shopinCart {
+  margin: 0px 0px 45px 0px;
+}

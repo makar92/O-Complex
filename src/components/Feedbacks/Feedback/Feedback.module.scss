@@ -1,0 +1,33 @@
+.feddback {
+  padding: 20px 27px;
+  max-width: 468px;
+  min-width: 292px;
+  width: calc(50% - 17px);
+
+  background-color: #D9D9D9;
+  color: #000000;
+  border-radius: 15px;
+
+  font-size: 24px;
+  line-height: 29px;
+
+  & div {
+    //ограничиваем блок 12 строчками, оканчиваем многоточием
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+
+    //делаем отступ кроме последнего (такой способ из-за display: -webkit-box;)
+    & * {
+      &:not(:last-child) {
+        margin: 0px 0px 20px 0px;
+      }
+    }
+  }
+
+  & h1 {
+    font-size: 42px;
+  }
+}

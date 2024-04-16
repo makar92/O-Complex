@@ -1,0 +1,29 @@
+.goodsItem {
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.title {
+  flex: 0 0 60%;
+
+  padding-right: 20px;
+
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+
+.count {
+  flex: 0 0 10%;
+}
+
+.total {
+  flex: 0 0 30%;
+
+  text-align: right;
+}

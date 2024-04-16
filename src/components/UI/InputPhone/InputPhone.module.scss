@@ -1,0 +1,67 @@
+@keyframes fade-in-out {
+  0%   {opacity: 0;}
+  10%  {opacity: 1;}
+  80%  {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.inputPhone {
+  max-width: 400px;
+
+  width: 100%;
+
+  height: 68px;
+  padding: 0px 12px;
+
+  border-radius: 15px;
+  background-color: #222222;
+  color: #F0F0F0; 
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease 0s;
+
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.2;
+
+  position: relative;
+  text-decoration: none;
+
+  &::placeholder {
+    color: #F0F0F0;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 24px;
+  }
+}
+
+.errorText {
+position: relative;
+}
+
+.errorText::after {
+    content: '';
+    position: absolute;
+    left: 5%;
+    bottom: 6px; 
+    width: 90%;
+    height: 4px; 
+    background-color: red;
+    opacity: 0; 
+  animation: fade-in-out 2s forwards;
+}
+
+.errorText::before {
+  content: 'Вы не ввели телефон!';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 10;
+  padding: 4px;
+  border-radius: 2px;
+  color: rgb(159, 0, 0);
+  background: #bb923f;
+  opacity: 0;
+  animation: fade-in-out 2s forwards;
+}

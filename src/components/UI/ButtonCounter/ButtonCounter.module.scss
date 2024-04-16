@@ -1,0 +1,27 @@
+.ButtonCounter {
+  width: 68px;
+  height: 68px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 15px;
+  background-color: #222222;
+  color: #F0F0F0;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease 0s;
+
+  font-size: 36px;
+  line-height: 1;
+
+  @media (min-width: 768px) {
+    &:hover {
+      background-color: #3c3c3c;
+    }
+  }
+  &:active {
+    background-color: #5c5c5c;
+  }
+}
