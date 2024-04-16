@@ -26,7 +26,7 @@
 ## Инструкции по установке и запуску
 
 1. Склонируйте репозиторий:
-  git clone https://github.com/makar92/O-Complex.
+  git clone https://github.com/makar92/O-Complex
    
 2. Перейдите в директорию проекта:
   cd o-complex
