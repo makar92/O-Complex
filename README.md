@@ -1,71 +1,49 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # O-Complex
+
+---
+
+## Описание
+
+В данном репозитории представлен проект O-Complex.
+
+## Особенности проекта
+
+- Реализована подгрузка товаров при достижении нижнего края страницы.
+- Предусмотрен вариант длинных названий и текстов.
+  - Ограничено количеством строк, с окончанием многоточием; также был вариант сделать перенос слов для названий, но выбран вариант с многоточием.
+  - По идее нужно добавить всплывающие подсказки с полным названием при наведении.
+- Реализована запись состояния заказа в sessionStorage для сохранения данных при перезагрузке страницы.
+- Сделаны модальные окна для загрузки и для успешного заказа.
+- Сделана маска для ввода телефона с помощью react-input-mask.
+- Добавлена проверка на наличие товаров в корзине и на то, что телефон полностью введен.
+- Все запросы сделаны с использованием axios.
+
+## Инструкции по установке и запуску
+
+1. Склонируйте репозиторий:
+   bash
+   git clone https://github.com/makar92/O-Complex
+Перейдите в директорию проекта:
+
+bash
+Copy code
+cd o-complex
+Убедитесь, что у вас установлен Node.js и npm. Затем выполните команду:
+
+bash
+Copy code
+npm install
+Запустите проект:
+
+bash
+Copy code
+npm start
+Это запустит разработческий сервер, и ваш проект React будет доступен по адресу http://localhost:3000 в вашем веб-браузере.
+
+TODO List
+В корзине напротив каждого товара добавить кнопку для удаления товара из корзины.
+Внизу экрана справа добавить кнопку в виде перевернутой двойной галочки для прокрутки на самый верх страницы, чтобы не приходилось прокручивать вручную; также сделать эту прокрутку плавной.
+Исправить название feedbacks на reviews (для согласования с API).
+Добавить анимацию для появления и исчезания модального окна.
+Исправить пометки для исправлений в самом коде в виде комментариев.
